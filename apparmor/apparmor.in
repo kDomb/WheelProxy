@@ -1,0 +1,13 @@
+#include <tunables/global>
+
+${BIN} flags=(complain) {
+  #include <abstractions/base>
+
+  deny network,
+  /dev/input/event* r,
+  /dev/uinput rw,
+  ${BIN} mr,
+  /proc/bus/input/devices r,
+  deny /home/*/** w,
+}
+

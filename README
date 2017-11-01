@@ -1,0 +1,16 @@
+WheelProxy
+ 
+
+ 
+compile:
+use cmake 
+or
+g++ -std=c++11 /path/to/WheelProxy/src/*.cpp -o WheelProxy
+
+
+
+usage:
+WheelProxy /path/to/WheelProxy/config/Thrustmaster_Italia_458_to_Logitech_Driving_Force_GT.json
+
+ 
+ 
