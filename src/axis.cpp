@@ -122,11 +122,11 @@ void
 Axis::set_value(int32_t value)
 {
 
-    m_value = value;
-
-    const int32_t range = abs(get_max() - get_min());
-    const int64_t abs_value = get_min() < 0 ? value + abs(get_min()) : value;
-    m_percent = static_cast<float>(abs_value) / static_cast<float>(range);
+    const int32_t min = get_min();
+    const int32_t max = get_max();
+    const float distance = abs(max - min);
+    const float abs_value = min < 0 ? value + abs(min) : value;
+    set_value_percent(abs_value / distance);
 
 }
 
@@ -141,11 +141,12 @@ Axis::set_value_percent(float p)
 
     const int32_t min = get_min();
     const int32_t max = get_max();
-    const int64_t range = abs(max - min);
-    m_value = (range * p) + (min > 0 ? min : (min < 0 ? min : 0 + max < 0 ? max : 0));
+    const int64_t distance = abs(max - min);
+    m_value = (distance * p) + (min > 0 ? min : (min < 0 ? min : 0 + max < 0 ? max : 0));
     m_percent = p;
 
 }
+
 
 
 

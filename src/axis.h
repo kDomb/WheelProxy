@@ -59,6 +59,7 @@ private:
     int32_t m_value;
     float m_percent;
 
+
 };
 
 
