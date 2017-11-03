@@ -54,12 +54,12 @@
             { "name": "21",    "code": 708 }
         ],
         "axes": [
-            { "name": "Steering",   "code": 0,  "min": -32768,  "max": 32767, "invert": false },
-            { "name": "Accelerate", "code": 1,  "min": 0,  "max": 255,   "invert": true  },
-            { "name": "Unused",      "code": 5,  "min": 0,  "max": 255,   "invert": true  },
-            { "name": "Brake",     "code": 2,  "min": 0,  "max": 255,   "invert": true },
-            { "name": "DPadH",      "code": 16, "min": -1, "max": 1,     "invert": false },
-            { "name": "DPadV",      "code": 17, "min": -1, "max": 1,     "invert": false }
+            { "name": "Steering",   "code": 0,  "min": -32768, "max": 32767, "invert": false },
+            { "name": "Accelerate", "code": 1,  "min": 0,      "max": 255,   "invert": true  },
+            { "name": "Unused",     "code": 5,  "min": 0,      "max": 255,   "invert": true  },
+            { "name": "Brake",      "code": 2,  "min": 0,      "max": 255,   "invert": true  },
+            { "name": "DPadH",      "code": 16, "min": -1,     "max": 1,     "invert": false },
+            { "name": "DPadV",      "code": 17, "min": -1,     "max": 1,     "invert": false }
         ]
 
     },
