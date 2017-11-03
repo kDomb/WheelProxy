@@ -1,0 +1,84 @@
+{
+    "input": {
+        "name": "Generic X-Box pad",
+        "vendor":  9414,
+        "product": 23296,
+        "version": 257,
+        "buttons": [
+            { "name": "A",           "code": 304 },
+            { "name": "B",           "code": 305 },
+            { "name": "X",           "code": 307 },
+            { "name": "Y",           "code": 308 },
+            { "name": "Start",       "code": 315 },
+            { "name": "Back",        "code": 314 },
+            { "name": "Left Stick",  "code": 317 },
+            { "name": "Right Stick", "code": 318 },
+            { "name": "Down",        "code": 310 },
+            { "name": "Up",          "code": 311 },
+            { "name": "XBox",        "code": 316 }
+        ],
+        "axes": [
+            { "name": "Steering",   "code": 0,  "min": -32768, "max": 32767, "invert": false },
+            { "name": "Accelerate", "code": 5,  "min": 0,      "max": 255,   "invert": false },
+            { "name": "Brake",      "code": 2,  "min": 0,      "max": 255,   "invert": false },
+            { "name": "DPadH",      "code": 16, "min": -1,     "max": 1,     "invert": false },
+            { "name": "DPadV",      "code": 17, "min": -1,     "max": 1,     "invert": false }
+        ]
+    },
+    "output": {
+        "name": "Logitech G920 Racing Wheel",
+        "vendor": 1133,
+        "product": 49762,
+        "version": 0,
+        "buttons": [
+            { "name": "A",     "code": 288 },
+            { "name": "B",     "code": 289 },
+            { "name": "X",     "code": 290 },
+            { "name": "Y",     "code": 291 },
+            { "name": "RB",    "code": 292 },
+            { "name": "LB",    "code": 293 },
+            { "name": "Start", "code": 294 },
+            { "name": "Back",  "code": 295 },
+            { "name": "RT",    "code": 296 },
+            { "name": "LT",    "code": 297 },
+            { "name": "11",    "code": 298 },
+            { "name": "12",    "code": 299 },
+            { "name": "13",    "code": 300 },
+            { "name": "14",    "code": 301 },
+            { "name": "15",    "code": 302 },
+            { "name": "16",    "code": 303 },
+            { "name": "17",    "code": 704 },
+            { "name": "18",    "code": 705 },
+            { "name": "19",    "code": 706 },
+            { "name": "20",    "code": 707 },
+            { "name": "21",    "code": 708 }
+        ],
+        "axes": [
+            { "name": "Steering",   "code": 0,  "min": -32768,  "max": 32767, "invert": false },
+            { "name": "Accelerate", "code": 1,  "min": 0,  "max": 255,   "invert": true  },
+            { "name": "Unused",      "code": 5,  "min": 0,  "max": 255,   "invert": true  },
+            { "name": "Brake",     "code": 2,  "min": 0,  "max": 255,   "invert": true },
+            { "name": "DPadH",      "code": 16, "min": -1, "max": 1,     "invert": false },
+            { "name": "DPadV",      "code": 17, "min": -1, "max": 1,     "invert": false }
+        ]
+
+    },
+    "map": [
+        { "src": { "type": "axis", "name": "Steering"    }, "target": { "type": "axis", "name": "Steering"   } },
+        { "src": { "type": "axis", "name": "Accelerate"  }, "target": { "type": "axis", "name": "Accelerate" } },
+        { "src": { "type": "axis", "name": "Brake"       }, "target": { "type": "axis", "name": "Brake"      } },
+        { "src": { "type": "axis", "name": "DPadH"       }, "target": { "type": "axis", "name": "DPadH"      } },
+        { "src": { "type": "axis", "name": "DPadV"       }, "target": { "type": "axis", "name": "DPadV"      } },
+
+        { "src": { "type": "button", "name": "Back"        }, "target": { "type": "button", "name": "Back"  } },
+        { "src": { "type": "button", "name": "X"           }, "target": { "type": "button", "name": "X"     } },
+        { "src": { "type": "button", "name": "B"           }, "target": { "type": "button", "name": "B"     } },
+        { "src": { "type": "button", "name": "A"           }, "target": { "type": "button", "name": "A"     } },
+        { "src": { "type": "button", "name": "Left Stick"  }, "target": { "type": "button", "name": "LT"    } },
+        { "src": { "type": "button", "name": "Right Stick" }, "target": { "type": "button", "name": "RT"    } },
+        { "src": { "type": "button", "name": "Start"       }, "target": { "type": "button", "name": "Start" } },
+        { "src": { "type": "button", "name": "Y"           }, "target": { "type": "button", "name": "Y"     } },
+        { "src": { "type": "button", "name": "Down"        }, "target": { "type": "button", "name": "LB"    } },
+        { "src": { "type": "button", "name": "Up"          }, "target": { "type": "button", "name": "RB"    } }
+    ]
+}
