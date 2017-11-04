@@ -1,9 +1,19 @@
-build:
-use cmake 
+# WheelProxy
+
+With WheelProxy you can turn your wheel or gamepad into another one.
 
 
-usage:
-WheelProxy --verbose --config /path/to/WheelProxy/config/Thrustmaster_Italia_458_to_Logitech_Driving_Force_GT.json
+## Dependencies
 
- 
- 
+cmake
+g++
+
+
+## Usage
+
+WheelProxy --verbose --config /path/to/WheelProxy/config/config.json
+
+
+## License
+
+This project is licensed under the GPLV3 License - see the [LICENSE](LICENSE) file for details
