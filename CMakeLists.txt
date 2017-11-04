@@ -23,6 +23,9 @@ if(APPARMOR)
 endif(APPARMOR)
 
 
+# show files in qt creator
+add_custom_target(Readme SOURCES README)
+add_custom_target(License SOURCES LICENSE)
 
 
 # uninstall target
