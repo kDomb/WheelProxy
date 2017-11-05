@@ -56,7 +56,7 @@
         "axes": [
             { "name": "Steering",   "code": 0,  "min": -32768, "max": 32767, "invert": false },
             { "name": "Accelerate", "code": 1,  "min": 0,      "max": 255,   "invert": true  },
-            { "name": "Unused",     "code": 5,  "min": 0,      "max": 255,   "invert": true  },
+            { "name": "Clutch",     "code": 5,  "min": 0,      "max": 255,   "invert": true  },
             { "name": "Brake",      "code": 2,  "min": 0,      "max": 255,   "invert": true  },
             { "name": "DPadH",      "code": 16, "min": -1,     "max": 1,     "invert": false },
             { "name": "DPadV",      "code": 17, "min": -1,     "max": 1,     "invert": false }
@@ -69,6 +69,8 @@
         { "src": { "type": "axis", "name": "Brake"       }, "target": { "type": "axis", "name": "Brake"      } },
         { "src": { "type": "axis", "name": "DPadH"       }, "target": { "type": "axis", "name": "DPadH"      } },
         { "src": { "type": "axis", "name": "DPadV"       }, "target": { "type": "axis", "name": "DPadV"      } },
+
+        { "src": { "type": "button", "name": "XBox" }, "target": { "type": "axis", "name": "Clutch", "values": { "pressed": 255, "released": 0 } } },
 
         { "src": { "type": "button", "name": "Back"        }, "target": { "type": "button", "name": "Back"  } },
         { "src": { "type": "button", "name": "X"           }, "target": { "type": "button", "name": "X"     } },
