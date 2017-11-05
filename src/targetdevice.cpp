@@ -187,12 +187,32 @@ TargetDevice::close()
 
 }
 
+
 void
 TargetDevice::init(WP::Device *src, const WP::Map *map)
 {
 
     m_map = map;
     src->set_listener(this);
+
+
+    if (WP::Application::get_verbose()) {
+        printf("[Output] init inverted axes...\n");
+    }
+
+    for (size_t i = 0, c = get_axis_count(); i < c; ++i) {
+        WP::Axis *axis = get_axis_at(i);
+        if (axis->get_invert()) {
+            axis->set_value(axis->get_min()); // invert to max
+
+            if (WP::Application::get_verbose()) {
+                printf("[Output] axis: (name=\"%s\" code=\"%d\" value=\"%d\")\n",
+                       axis->get_name().c_str(), axis->get_code(), axis->get_value());
+            }
+            send_event(m_fd, EV_ABS, axis->get_code(), axis->get_value(), true);
+        }
+    }
+
 
     if (WP::Application::get_verbose()) {
         printf("[Output] sync with input device...\n");
